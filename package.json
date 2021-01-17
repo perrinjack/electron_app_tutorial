@@ -1,0 +1,20 @@
+{
+  "name": "electron_tutorial",
+  "version": "1.0.0",
+  "description": "My debut electron app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "asar pack MyApp-darwin-x64/MyApp.app/Contents/Resources/app MyApp-darwin-x64/MyApp.app/Contents/Resources/app.asar",
+    "build": "electron-packager . MyApp --ignore=node_modules/electron-*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "asar": "^3.0.3",
+    "electron": "^11.2.0",
+    "electron-packager": "^15.2.0"
+  }
+}
